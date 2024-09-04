@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#servicesSection">Services</a></li>
+                <li><a href="#membershipSection">Membership</a></li>
+                <li><a href="#contactSection">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="homeSection">
+        <h2>Welcome to the Library</h2>
+        <p>Your one-stop destination for all your book and resource needs. Explore our wide collection and become a member today!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutSection">
+        <h2>About Us</h2>
+        <p>The Library Management System is designed to help you manage your library resources efficiently. We offer a vast collection of books, journals, and digital resources. Our mission is to provide easy access to knowledge and foster a love for reading in our community.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicesSection">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Book Lending</li>
+            <li>Digital Resources</li>
+            <li>Research Assistance</li>
+            <li>Community Events</li>
+            <li>Reading Rooms</li>
+        </ul>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membershipSection">
+        <h2>Membership Management</h2>
+
+        <!-- Add Membership Form -->
+        <div class="membershipForm">
+            <h3>Add Membership</h3>
+            <form>
+                <label for="addName">Name:</label>
+                <input type="text" id="addName" name="addName" required>
+                <br>
+                <label for="addDuration">Membership Duration:</label>
+                <select id="addDuration" name="addDuration" required>
+                    <option value="6 months" selected>6 months</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                </select>
+                <br>
+                <button type="submit">Add Membership</button>
+            </form>
+        </div>
+
+        <!-- Update Membership Form -->
+        <div class="membershipForm">
+            <h3>Update Membership</h3>
+            <form>
+                <label for="updateMemberId">Membership ID:</label>
+                <input type="text" id="updateMemberId" name="updateMemberId" required>
+                <br>
+                <label for="updateDuration">New Membership Duration:</label>
+                <select id="updateDuration" name="updateDuration" required>
+                    <option value="6 months" selected>6 months</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                </select>
+                <br>
+                <button type="submit">Update Membership</button>
+            </form>
+        </div>
+
+        <!-- View Membership Form -->
+        <div class="membershipForm">
+            <h3>View Membership</h3>
+            <form>
+                <label for="viewMemberId">Membership ID:</label>
+                <input type="text" id="viewMemberId" name="viewMemberId" required>
+                <br>
+                <button type="submit">View Membership</button>
+            </form>
+        </div>
+
+        <!-- Delete Membership Form -->
+        <div class="membershipForm">
+            <h3>Delete Membership</h3>
+            <form>
+                <label for="deleteMemberId">Membership ID:</label>
+                <input type="text" id="deleteMemberId" name="deleteMemberId" required>
+                <br>
+                <button type="submit">Delete Membership</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contactSection">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+        <div class="socialLinks">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>Contact us at: <a href="mailto:info@librarymanagement.com">info@librarymanagement.com</a></p>
+    </footer>
+</body>
+</html>
